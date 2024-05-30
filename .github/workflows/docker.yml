@@ -27,7 +27,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8
     - name: Run Python unit tests
-      run: python3 -u -m unittest discover
+      run: python3 -u -m unittest src/tests_flask_app.py
     - name: Analysing the code with flake8
       run: |
         flake8 $(git ls-files '*.py')
