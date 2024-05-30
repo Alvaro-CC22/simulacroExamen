@@ -1,0 +1,9 @@
+version: "3.1"
+
+services:
+  devops:
+    container_name: simulacro
+    image: acamcor827/simulacro
+    ports:
+      - 80:5000
+    restart: always
